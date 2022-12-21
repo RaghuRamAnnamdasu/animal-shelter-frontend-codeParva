@@ -1,0 +1,123 @@
+.boxEnclosure{
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    background-color:rgba(235, 249, 255, 1);
+    top: 5%;
+    left: 25%;
+    padding: 32px;
+    overflow: auto;
+    position: relative;
+}
+
+.closeIcon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: medium !important;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.adoptPetModalEnclosure{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.adoptPetHeading{
+    font-weight: 700;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.petDetailsWrapper,
+.adopteeDetailsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.petDetailsWrapperDescription,
+.AdmiteeDetailsWrapperDescription{
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.petTypelabel, .petTypeinput,
+.breedTypelabel, .breedTypeinput,
+.fullNameLabel, .fullNameInput,
+.emailLabel, .emailInput,
+.phoneLabel, .phoneInput{
+    display: block;
+}
+
+.petTypeWrapper, .breedTypeWrapper,
+.nameWrapper, .emailWrapper,
+.phoneNumberWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input, select{
+    width: 50%;
+    /* height: 56px; */
+    max-height: 56px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 16px;
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid  rgba(0, 0, 0, 0.7);
+}
+
+.adoptionModalButton{
+    color: #fff !important;
+    padding: 10px 20px 10px 20px !important;
+    border-radius: 6px !important;
+    background: rgba(255, 101, 132, 1) !important;
+    align-self: flex-end;
+    min-height: 50px;
+}
+
+label span{
+    color: rgba(255, 101, 132, 1);
+}
+
+.adoptFooter {
+    text-align: end;
+}
+
+@media screen and (max-width: 480px) {
+    .boxEnclosure {
+        position: unset;
+        height: -webkit-fill-available;
+        padding: 8px 12px;
+        width: 100%;
+    }
+
+    .petDetailsWrapperDescription,
+    .AdmiteeDetailsWrapperDescription {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .adoptFooter {
+        text-align: center;
+    }
+
+    .adoptPetModalEnclosure {
+        gap: 30px;
+        height: inherit;
+    }
+
+    select{
+        width: calc(100% - 24px);
+    }
+
+    input {
+        width: calc(100% - 56px);
+    }
+}

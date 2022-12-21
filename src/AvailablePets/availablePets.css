@@ -1,0 +1,90 @@
+.availablePetsHeading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.avialblePetsBoxEnclosure {
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    background-color:rgba(235, 249, 255, 1);
+    top: 5%;
+    left: 25%;
+    padding: 32px;
+    position: relative;
+}
+
+.petTypeSelectionWrapper {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.dogHeading,
+.catHeading {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.border {
+    border-right: 1px solid rgba(0, 0, 0, 1);
+    height: 42px;
+    width: 1px;
+}
+
+.hightlightDog,
+.hightlightCat {
+    color: rgba(0, 117, 170, 1);
+    border-bottom: 4px solid rgba(0, 117, 170, 1);
+}
+
+.MuiTableContainer-root {
+    max-height: 70% !important;
+}
+
+table th {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: rgba(0, 0, 0, 0.7) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 1) !important;
+    padding-bottom: 8px !important;
+    background-color:rgba(235, 249, 255, 1) !important;
+}
+
+table tr td {
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    color: rgba(0, 0, 0, 0.7) !important;
+    padding-bottom: 24px !important;
+}
+
+table tbody tr:first-child td {
+    padding-top: 20px !important;
+}
+
+@media screen and (max-width: 480px) {
+    .avialblePetsBoxEnclosure {
+        padding: 8px;
+        width: 100%;
+        position: unset;
+        height: -webkit-fill-available;
+    }
+
+    .availablePetsHeading {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .dogHeading,
+    .catHeading {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .MuiTableContainer-root {
+        max-height: 80% !important;
+    }
+}

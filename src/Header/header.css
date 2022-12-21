@@ -1,0 +1,81 @@
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 80px;
+    background-color: #EBF9FF;
+    align-items: center;
+    /* margin-bottom: 60px; */
+}
+
+.shelterHeading {
+    color: #000000;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.logoWrapper,
+.navItems,
+.socialMediaIcons {
+    display: flex;
+    align-items: center;
+}
+
+.logoWrapper{
+    gap: 16px;
+}
+
+.navItems{
+    gap: 40px;
+}
+
+.socialMediaIcons{
+    gap: 24px;
+}
+
+.navItems .home {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #000000;
+    margin: 0;
+}
+
+.navItems .contactUs {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.navIcon{
+    display : none;
+}
+
+@media screen and (max-width: 480px) {
+    .headerWrapper {
+         padding: 12px 16px; 
+         background-color: #fff;
+    }
+
+    .shelterHeading {
+        font-size: 20px;
+    }
+
+    .navItems,
+    .socialMediaIcons {
+        display: none;
+    }
+
+    .logoWrapper img{
+        width: 28px;
+        height: 25px;
+    }
+
+    .footerAnimalShelter{
+        width: 46px;
+        height: 38px;
+    }
+
+    .navIcon{
+        display: unset;
+    }
+ }

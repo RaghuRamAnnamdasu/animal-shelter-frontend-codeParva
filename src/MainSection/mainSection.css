@@ -1,0 +1,145 @@
+.mainSection {
+    padding: 80px 120px 60px 150px;
+    background-color: #EBF9FF;
+}
+
+.adoptionContainer {
+    margin-bottom: 69px;
+}
+
+.adoptionSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 32px;
+}
+
+.adoptButtonsSection {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.adoptButton {
+    color: #fff !important;
+    padding: 10px 20px 10px 20px !important;
+    border-radius: 6px !important;
+    background: rgba(255, 101, 132, 1) !important;
+    text-transform: capitalize !important;
+}
+
+.petsButton,
+.giveAwayButton{
+    padding: 10px 20px 10px 20px !important;
+    border-radius: 6px !important;
+    color: rgba(0, 0, 0, 1) !important;
+    border: 2px solid #575757 !important;
+}
+
+.giveAwayButton {
+    text-transform: capitalize !important;
+}
+
+.petsButton {
+    text-transform: initial !important;
+}
+
+.giveAwaySection {
+    text-align: end;
+}
+
+.thirdSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.welcomeText,
+.takeCareText {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.adoptContent,
+.giveAwayContent,
+.thirdSection {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.giveAwayContent{
+    margin-bottom: 32px;
+}
+
+.adoptionSectionImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+   .mainSection {
+        padding: 24px 16px;
+   }
+
+   .welcomeText,
+   .takeCareText {
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1)
+   }
+
+   .adoptContent,
+   .giveAwayContent,
+   .thirdSection p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+   }
+
+   .adoptionSection {
+        display: unset;
+   }
+
+   .adoptButtonsSection {
+        display: grid;
+        justify-content: center;
+   }
+
+   .adoptButtonsSection button {
+        width: -webkit-fill-available;
+        font-size: 16px;
+        font-weight: 400;
+   }
+
+   .giveAwaySection {
+        text-align: start;
+   }
+
+   .thirdSection {
+        display: grid;
+        padding-top: 40px;
+   }
+
+   .adoptionSectionImage img {
+        width: 164px;
+        height: 55px;
+   }
+
+   .leavesLogoContainer img {
+        width: 109px;
+        height: 66px;
+   }
+
+   .leavesLogoContainer {
+        text-align: center;
+   }
+
+   .giveAwaySection button {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        font-weight: 400;
+   }
+}

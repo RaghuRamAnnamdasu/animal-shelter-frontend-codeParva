@@ -1,0 +1,159 @@
+.footerWrapper {
+    padding: 80px 150px;
+    background-color: #131313;;
+}
+
+.footerDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    padding: 40px 0;
+}
+
+.footerAnimalShelter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 9px;
+}
+
+.bestAnimalShelter{
+    margin-bottom: 40px;
+}
+
+.copyRightDetails {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.quickLinks,
+.getInTouch,
+.animalShelter,
+.followUs{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.quickLinksWrapper .home,
+.quickLinksWrapper .contactUs,
+.addressWrapper .address,
+.addressWrapper .gmail,
+.bestAnimalShelter,
+.copyRightText {
+    color: #9CA3AF;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.privacyDetails {
+    color: #D1D5DB;
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.locationWrapper,
+.mailWrapper {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+
+.quickLinks,
+.getInTouch,
+.locationWrapper,
+.mailWrapper,
+.followUs{
+    margin-bottom: 24px !important;
+}
+
+.home{
+    margin-bottom: 12px;
+}
+
+
+.eastIcon{
+    margin-left: 10px;
+    align-self: center;
+}
+
+.adoptButtonFooter{
+    color: #fff;
+    padding: 10px 20px 10px 20px !important;
+    border-radius: 6px !important;
+    background: rgba(255, 101, 132, 1) !important;
+    text-transform: capitalize !important;
+}
+
+.linkedInIconFooter,
+.facebookIconFooter{
+    fill: #9CA3AF !important;
+}
+
+.footerIconWrapper{
+    display: flex;
+    gap: 32px;
+}
+
+.getInTouchWrapper{
+    min-width: 410px;
+}
+
+@media screen and (max-width: 480px) {
+    .footerWrapper {
+        padding: 50px 28px;
+        line-height: 20px;
+    }
+
+    .getInTouchWrapper {
+        min-width: unset;
+    }
+
+    .footerDetails {
+        grid-template-columns: unset;
+        gap: 40px;
+    }
+
+    .privacyDetails {
+        display: none;
+    }
+
+    .quickLinks,
+    .getInTouch,
+    .locationWrapper,
+    .animalShelter,
+    .followUs,
+    .mailWrapper{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .quickLinksWrapper .home,
+    .quickLinksWrapper .contactUs {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .bestAnimalShelter,
+    .locationWrapper,
+    .mailWrapper {
+        color: rgba(156, 163, 175, 1);
+    }
+
+    .adoptContent {
+        margin-bottom: 28px;
+    }
+
+    .copyRightDetails .copyRightText {
+        color: #6B7280;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
