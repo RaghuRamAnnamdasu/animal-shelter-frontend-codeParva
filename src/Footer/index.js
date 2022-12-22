@@ -3,6 +3,7 @@ import EastIcon from '@mui/icons-material/East';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Button } from "@mui/material";
+import { AdoptPet } from "../AdoptPet";
 
 export function Footer () {
     return (
@@ -14,7 +15,8 @@ export function Footer () {
                         <div className="animalShelter">ANIMAL SHELTER</div>
                     </div>
                     <p className="bestAnimalShelter">One of the best animal shelter places in India. We ar recognized by the government. Please take a pledge to take care of these lovely pets!</p>
-                    <Button variant = "contained" className="adoptButtonFooter">Adopt<EastIcon className = "eastIcon"/></Button>
+                    <AdoptPet isFooter = {true}/>
+                    {/* <Button variant = "contained" className="adoptButtonFooter">Adopt<EastIcon className = "eastIcon"/></Button> */}
                 </div>
                 <div className="getInTouchWrapper">
                     <div className="getInTouch">GET IN TOUCH</div>

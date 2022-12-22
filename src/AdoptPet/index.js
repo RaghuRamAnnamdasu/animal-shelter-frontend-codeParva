@@ -2,12 +2,13 @@ import { Button, IconButton, Modal } from "@mui/material";
 import { Box } from "@mui/system";
 import { useEffect, useState } from "react";
 import CloseIcon from '@mui/icons-material/Close';
+import EastIcon from '@mui/icons-material/East';
 import { petDetails } from "../petDetails";
 
 import "./adoptPet.css";
 
 
-export function AdoptPet(){
+export function AdoptPet({isFooter}){
 
     const [open, setOpen] = useState(false);
     const [isDogSelected, setIsDogSelected] = useState(true);
@@ -84,7 +85,7 @@ export function AdoptPet(){
 
     return(
         <div>
-            <Button variant = "outlined"  className="adoptButton" onClick={handleOpen}>Adopt</Button>
+            <Button variant = "outlined"  className="adoptButton" onClick={handleOpen}>Adopt {isFooter ? <EastIcon className = "eastIcon"/> : null}</Button>
             <Modal
                 open={open}
                 // onClose={handleClose}
